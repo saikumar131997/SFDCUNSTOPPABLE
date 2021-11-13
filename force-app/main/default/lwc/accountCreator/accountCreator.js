@@ -1,3 +1,4 @@
+//sample one
 import { LightningElement } from 'lwc';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 import ACCOUNT_OBJECT from '@salesforce/schema/Account';
