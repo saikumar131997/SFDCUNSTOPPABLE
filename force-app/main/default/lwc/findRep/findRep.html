@@ -1,0 +1,27 @@
+<template>
+    <div class="findrep_main_div">
+        <h1 class="find_rep_title">
+       Find using claim number, or find using policy nuber and incident date
+        </h1>
+
+  <div class="slds-grid slds-wrap wrapper">
+    <div class="slds-col div1">
+       <lightning-input type="text" name="claimNumber" label="Claim Number" placeholder="Claim Number"
+       value={Claimnumber} onchange={handleClaimChange} class="slds-input" tabindex="0"  min-length="10" ></lightning-input>
+       <p class="slds-var-p-left_medium"> entered value is {claim}</p>
+
+       <button  tabindex="0"  onclick={handleSearchClaim} class="searchByClaimNumber_button">Search</button>
+      </div>
+
+      <div class="slds-col div2">
+        <lightning-input type="text" name="policyNumber" label="Policy Number" placeholder="Policy Number"
+        value={policyNumber} onchange={handlePolicyChange}  tabindex="0" max-length="15" class="slds-input"></lightning-input>
+      
+        <lightning-input type="date" name="incidentDate" label="Incident Date" placeholder="Incident Date"
+        value={incidentDate} onchange={handleDateChange}  tabindex="0" ></lightning-input>
+      
+        <button  tabindex="0"  onclick={handleSearchPoliy} class="searchByClaimNumber_button">Search</button>
+      </div>
+  </div>
+    </div>
+</template>
